@@ -32,11 +32,11 @@ describe('node128', function() {
     })
     it('encode should return a code 128 code c encoded sequence in ascii chars using mapping 0', function () {
       var encoder= new Encoder()
-      assert(encoder.encode("9596979899") === "ÍÃÄÅÆÇ9Î")
+      assert(encoder.encode("009596979899") === "Í ÃÄÅÆÇÆÎ")
     })
     it('encode should return a code 128 code c encoded sequence in ascii chars using mapping 2', function () {
       var encoder= new Encoder()
-      assert(encoder.encode("9596979899",{mapping:2}) === "ÒÈÉÊËÌ9Ó")
+      assert(encoder.encode("009596979899",{mapping:2}) === "Ò ÈÉÊËÌËÓ")
     })
     it('return all infos', function () {
       var encoder= new Encoder()
